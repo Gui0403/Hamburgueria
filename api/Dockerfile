@@ -20,6 +20,6 @@ RUN composer dump-autoload --optimize --no-scripts
 
 COPY . .
 
-ENV PORT=8000
+ENV PORT=10000
 
 CMD php artisan serve --host=0.0.0.0 --port=$PORT
