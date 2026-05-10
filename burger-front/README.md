@@ -1,0 +1,35 @@
+burger-front/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   ├── burger/
+│   │   └── cart/
+│   │
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Menu/
+│   │   ├── Product/
+│   │   ├── Cart/
+│   │   ├── Checkout/
+│   │   ├── Login/
+│   │   └── Admin/
+│   │
+│   ├── services/
+│   │   └── api.ts
+│   │
+│   ├── store/
+│   │   └── cartStore.ts
+│   │
+│   ├── hooks/
+│   ├── routes/
+│   │   └── AppRoutes.tsx
+│   │
+│   ├── layouts/
+│   │   └── MainLayout.tsx
+│   │
+│   ├── types/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css

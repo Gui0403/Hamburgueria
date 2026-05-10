@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+
+  app:
+    build:
+      context: ./api
+    container_name: hamburgueria_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/var/www
+      - /var/www/vendor
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16
+    container_name: hamburgueria_postgres
+    environment:
+      POSTGRES_DB: hamburgueria
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
