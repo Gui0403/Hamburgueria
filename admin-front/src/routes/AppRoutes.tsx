@@ -16,9 +16,12 @@ import EditBurger from "../pages/admin/EditBurger";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 export default function AppRoutes() {
+    const isAuthenticated = !!localStorage.getItem("token"); 
+    
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<Navigate to={isAuthenticated ? "/admin" : "/login"} />} />
 
                 <Route element={<MainLayout />}>
                     <Route path="/login" element={<Login />} />
