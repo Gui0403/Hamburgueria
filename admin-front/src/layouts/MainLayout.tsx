@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Suspense, useEffect, useState } from "react";
 import { api } from "../services/api";
 import { LoadingScreen } from "../utils/LoadingScreen";
