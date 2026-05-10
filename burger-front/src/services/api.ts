@@ -3,7 +3,7 @@ import { useAuthStore } from "../store/authStore";
 
 export const api = axios.create({
     baseURL:
-        "http://localhost:8000/api",
+        "https://hamburgueria-application.onrender.com",
 });
 
 api.interceptors.request.use(
