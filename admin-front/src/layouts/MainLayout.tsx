@@ -5,7 +5,6 @@ import { LoadingScreen } from "../utils/LoadingScreen";
 
 
 export default function AdminLayout() {
-    const location = useLocation();
     const [burgers, setBurgers] = useState([]);
     const [loading, setLoading] = useState(true);
 
