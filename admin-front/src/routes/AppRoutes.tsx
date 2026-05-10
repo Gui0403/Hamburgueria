@@ -22,7 +22,7 @@ export default function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Navigate to={isAuthenticated ? "/admin" : "/login"} />} />
+                <Route path="/" element={<Navigate to={isAuthenticated ? "/admin" : "/login"} replace />} />
 
                 <Route element={<MainLayout />}>
                     <Route path="/login" element={<Login />} />
