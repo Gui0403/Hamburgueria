@@ -15,7 +15,8 @@ WORKDIR /var/www
 
 COPY composer.json ./
 
-RUN composer install
+RUN composer install --no-scripts --no-autoloader
+RUN composer dump-autoload --optimize --no-scripts
 
 COPY . .
 
