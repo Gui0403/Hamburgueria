@@ -1,4 +1,3 @@
----
 
 # 🍔 Hamburgueria SaaS
 
@@ -250,5 +249,3 @@ No fim das contas você tem:
 ✔ Admin completo
 ✔ Arquitetura escalável
 ✔ Base pra SaaS de verdade
-
----
