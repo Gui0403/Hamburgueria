@@ -7,8 +7,9 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'http://localhost:5173', // burger-front
-        'http://localhost:5174', // admin-front
+        'https://vercel.app', 
+        'https://hamburgueria-client.vercel.app',
+        'https://hamburgueria-admin.vercel.app',
     ],
 
     'allowed_origins_patterns' => [],
