@@ -8,8 +8,9 @@ import {
     useParams,
 } from "react-router-dom";
 
-import { api } from "../../../services/api";
-import { getImageUrl } from "../../../utils/getImageUrl";
+import { api } from "@/services/api";
+import { getImageUrl } from "@/utils/getImageUrl";
+
 
 export default function EditBurger() {
     const { id } = useParams();

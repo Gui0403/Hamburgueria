@@ -1,9 +1,9 @@
 import toast from "react-hot-toast";
 
 
-import { useCartStore } from "../../store/cartStore";
-import type { Burger } from "../../types/Burger";
-import { getImageUrl } from "../../utils/image";
+import { useCartStore } from "@/store/cartStore";
+import type { Burger } from "@/types/Burger";
+import { getImageUrl } from "@/utils/getImageUrl";
 
 interface Props {
     burger: Burger;
